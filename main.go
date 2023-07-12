@@ -1,11 +1,24 @@
 package main
 
 import (
+	"github.com/erismaroliveira/gopportunities/config"
 	"github.com/erismaroliveira/gopportunities/router"
 )
 
-func main() {
+var (
+	logger *config.Logger
+)
 
-	// Initialize router
+func main() {
+	logger := config.GetLogger("main")
+
+	// Initialize Configs
+	err := config.Init()
+	if err != nil {
+		logger.Errorf("config initialization error: %v", err)
+		return
+	}
+
+	// Initialize Router
 	router.Initialize()
 }
