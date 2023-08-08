@@ -22,7 +22,7 @@ This project is a modern job opportunities API built using Golang, currently one
 
 ## Live Version
 
-You can check the documentation and perform tests to the API by visiting the live version hosted at [Shortly]().
+You can check the documentation and perform tests to the API by visiting the live version hosted at [gopportunities.onrender.com](https://gopportunities.onrender.com/swagger/index.html).
 
 ## Installation
 
